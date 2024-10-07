@@ -9,4 +9,4 @@ if ! [ -d ~/.atuin/bin ]; then
 		source $HOME/.atuin/bin/env
 fi
 
-eval "$(~/.atuin/bin/atuin init zsh --disable-up-arrow)"
+eval "$(atuin init zsh --disable-up-arrow)"
