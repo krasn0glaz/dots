@@ -30,6 +30,13 @@ source ~/.config/zsh/zsh-history-substring-search
 # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
+install-dotfiles() {
+		git clone https://github.com/krasn0glaz/dots && cd dots
+		./install.sh
+		cd .. && rm -rf dots
+		echo installed dotfiles
+}
+
 test -e ~/.dots || install-dotfiles
 source ~/.config/zsh/variables.zsh
 source ~/.config/zsh/geometry-config.zsh

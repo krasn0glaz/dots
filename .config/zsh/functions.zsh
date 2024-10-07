@@ -50,16 +50,3 @@ if type brew &>/dev/null; then
   autoload -Uz compinit
   compinit
 fi
-
-install-dotfiles() {
-		if [ -e ~/.dots ]
-		then
-				echo dotfiles already installed;
-				return 1;
-		else
-				git clone https://github.com/krasn0glaz/dots && cd dots
-				./install.sh
-				cd .. && rm -rf dots
-				echo installed dotfiles
-		fi
-}

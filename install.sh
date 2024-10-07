@@ -1,5 +1,8 @@
 #/bin/bash
 
+mkdir -p ~/.config/zsh
+mkdir -p ~/.config/ranger/colorschemes
+
 cp .zshrc ~/.zshrc
 cp .config/zsh/*.zsh ~/.config/zsh/
 
