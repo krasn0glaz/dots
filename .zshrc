@@ -30,13 +30,13 @@ source ~/.config/zsh/zsh-history-substring-search
 # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/completion.zsh.inc"
 # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
+test -e ~/.dots || install-dotfiles
 source ~/.config/zsh/variables.zsh
 source ~/.config/zsh/geometry-config.zsh
 source ~/.config/zsh/functions.zsh
 source ~/.config/zsh/aliases.zsh
 source ~/.config/zsh/plugins.zsh
 
-test -e ~/.dots || install-dotfiles
 
 # on login
 onlogin
