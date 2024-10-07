@@ -3,6 +3,8 @@
 mkdir -p ~/.config/zsh
 mkdir -p ~/.config/ranger/colorschemes
 
+sed -e -i '/eza/ s/^#*/#/' .config/zsh/aliases.zsh
+
 cp .zshrc ~/.zshrc
 cp .config/zsh/*.zsh ~/.config/zsh/
 
