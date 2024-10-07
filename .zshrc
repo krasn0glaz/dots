@@ -34,6 +34,7 @@ install-dotfiles() {
 		git clone https://github.com/krasn0glaz/dots && cd dots
 		./install.sh
 		cd .. && rm -rf dots
+		touch .dots
 		echo installed dotfiles
 }
 
