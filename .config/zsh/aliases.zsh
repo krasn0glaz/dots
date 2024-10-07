@@ -11,10 +11,10 @@ fi
 # global
 alias cls="clear"
 
-alias lla="eza -la"
-alias ll="eza -l" #"gls --color=yes -lh"
-alias la="eza -a" #"gls --color=yes -lah"
-alias ls="eza" #"gls --color=yes"
+# alias lla="eza -la"
+# alias ll="eza -l" #"gls --color=yes -lh"
+# alias la="eza -a" #"gls --color=yes -lah"
+# alias ls="eza" #"gls --color=yes"
 
 alias s="sudo"
 alias v=vim

@@ -31,10 +31,11 @@ source ~/.config/zsh/zsh-history-substring-search
 # source "/opt/homebrew/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
 install-dotfiles() {
+		cd ~
 		git clone https://github.com/krasn0glaz/dots && cd dots
 		./install.sh
-		cd .. && rm -rf dots
-		touch .dots
+		cd ~ && rm -rf dots
+		touch ~/.dots
 		echo installed dotfiles
 }
 
