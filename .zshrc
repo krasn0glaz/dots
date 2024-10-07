@@ -49,7 +49,3 @@ source ~/.config/zsh/plugins.zsh
 
 # on login
 onlogin
-
-. "$HOME/.atuin/bin/env"
-
-eval "$(atuin init zsh)"
